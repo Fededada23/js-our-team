@@ -37,6 +37,17 @@ let dipendenti =[
     }
 ]
 
-for(let key in dipendenti){
-    console.log(dipendenti[key])
+const currentDiv=document.getElementById("container");
+
+for(let i in dipendenti){
+    console.log(dipendenti[i]);
+    
+    let newDiv=document.createElement('p');
+    let img=document.createElement('img');
+    img.src = 
+    newDiv.append(dipendenti[i].nome+' '+dipendenti[i].ruolo+' '+dipendenti[i].image);
+    currentDiv.append(newDiv);
 }
+
+
+
